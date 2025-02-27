@@ -4,7 +4,6 @@ def solution(strArr):
     for str in strArr:
         if 'ad' not in str:
             answer.append(str)
-            
         else:
             continue
             
