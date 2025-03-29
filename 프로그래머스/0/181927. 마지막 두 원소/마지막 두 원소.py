@@ -1,12 +1,10 @@
 def solution(num_list):
-    answer = []
+    n1 = num_list[-1]
+    n2 = num_list[-2]
     
-    for i in num_list:
-        answer.append(i)
-        
-    if num_list[len(num_list)-1] > num_list[len(num_list)-2]:
-        answer.append(num_list[len(num_list)-1] - num_list[len(num_list)-2] )
+    if n1 > n2:
+        num_list.append(n1 - n2)
     else:
-        answer.append(num_list[len(num_list)-1]*2)
-        
-    return answer
+        num_list.append(n1 * 2)
+    
+    return num_list
